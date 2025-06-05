@@ -21,7 +21,7 @@ class Estagiario : public Funcionario { //  Herança da classe abstrada Funciona
     //Metódos
     void exibirInformacoes() override;  //  Sobrescreve as informações 
 
-    float calcularSalarioFinal() override;  //  Sobrescreve o cálculo do salário final
+    float CalcularSalario() override;
 };
 
 #endif  //  Fim da guarda de inclusão (ESTAGIARIO_H)
