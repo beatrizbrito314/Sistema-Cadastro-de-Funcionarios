@@ -19,7 +19,7 @@ using namespace std;
     void Desenvolvedor::exibirInformacoes(){
         cout << "ID: " << getID() <<endl;
         cout << "Nome: " << nome << endl;
-        cout << "Tipo: Desenvovedor " << endl; 
+        cout << "Tipo: Desenvolvedor " << endl; 
         cout << "Projetos: " << quantidadeDeProjetos << endl;
         cout << "Salário base: " << salarioBase << endl;
         cout << "Salário final: " << calcularSalarioFinal() << endl;
