@@ -61,4 +61,49 @@ Contém atributos comuns e métodos básicos para todos os funcionários:
 - Cálculo do salário final baseado nas regras de cada cargo
 - Exibição dos dados de todos os funcionários
 
+---
+
+## 💻 Uso
+
+1. Clonar o repositório
+No Git Bash: git clone https://github.com/beatrizbrito314/LP1-Sistema-Bancario-Simples
+
+2. Entre no diretório do projeto
+cd ~/Cadastro-de-Funcionarios 
+
+3. Compile o projeto utilizando o makeFile
+make
+
+4. Execute o programa
+./cadastroDeFuncionarios
+
+---
+
+## 👩‍💻👨‍💻 Autores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/heyitssarah">
+        <img src="https://github.com/heyitssarah.png" width="100px;" alt="Sarah Lima"/>
+        <br />
+        <sub><b>Sarah Lima</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/luzdrik">
+        <img src="https://github.com/luzdrik.png" width="100px;" alt="Luiz Felipe"/>
+        <br />
+        <sub><b>Luiz Felipe</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/beatrizbrito314">
+        <img src="https://github.com/beatrizbrito314.png" width="100px;" alt="Emilly Beatriz"/>
+        <br />
+        <sub><b>Emilly Beatriz</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 

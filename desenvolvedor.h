@@ -14,7 +14,7 @@ class Desenvolvedor: public Funcionario {
     public:
     Desenvolvedor(string nome, int id, float salarioBase, int projetos);
     float calcularSalarioFinal();
-    void exibirInformacoes();
+    void exibirInformacoes();   
 };
 
 #endif
