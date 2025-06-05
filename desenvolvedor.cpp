@@ -1,24 +1,22 @@
 #include <iostream>
 #include <string>
 #include "funcionario.h"
+#include "desenvolvedor.h"
 using namespace std;
 
-//Desenvolvedor é classe filha de Funcionário
-class Desenvolvedor : public Funcionario {
-    private:
-        int quantidadeDeProjetos;
-
-    public:
+    
         //Construtor
-        Desenvolvedor(string nome, int id, float salarioBase, int projetos) : Funcionario(nome, id, salarioBase), quantidadeDeProjetos(projetos){}
+        Desenvolvedor::Desenvolvedor(string nome, int id, float salarioBase, int projetos)
+         : Funcionario(nome, id, salarioBase), quantidadeDeProjetos(projetos){}
         
-        float calcularSalarioFinal(){
-        return salarioBase +(500 * quantidadeDeProjetos);
+         //Implementação de calcularSalarioFinal()
+        float Desenvolvedor::calcularSalarioFinal(){
+            return salarioBase +(500 * quantidadeDeProjetos);
     }
 
    
-
-    void exibirInformaçoes(){
+    //Sobreescrevendo exibirInformacoes()
+    void Desenvolvedor::exibirInformacoes(){
         cout << "ID: " << getID() <<endl;
         cout << "Nome: " << nome << endl;
         cout << "Tipo: Desenvovedor " << endl; 
@@ -30,5 +28,3 @@ class Desenvolvedor : public Funcionario {
     }
 
     
-    
-};
