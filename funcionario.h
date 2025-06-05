@@ -11,7 +11,6 @@ class Funcionario {
     protected:
         std::string nome;
         float salarioBase;
-
     public:
         //construtor
         Funcionario(std::string nome, int id, float salarioBase);
