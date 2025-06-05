@@ -12,6 +12,9 @@ class Estagiario : public Funcionario { //  Herança da classe abstrada Funciona
     int horasTrabalhadas;   //  Horas que foram trabalhadas pela pessoa com o cargo de estagiário
 
     public:
+    //Construtor
+    Estagiario(string nome, int id, float salarioBase, int horas);
+    
     //Setter
     void setHorasTrabalhadas (int horas) {horasTrabalhadas = horas;}    //  horas atribui valor ao atributo privado horasTrabalhadas
 
