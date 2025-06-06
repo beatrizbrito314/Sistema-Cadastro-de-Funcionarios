@@ -17,7 +17,7 @@ Desenvolvedor* cadastrarDesenvolvedor(string nome, int id, float salarioBase, in
 
 Estagiario* cadastrarEstagiario(string nome, int id, float salarioBase, float horas);
 
-void cadastrarFuncionarios(Funcionario* listaFuncionarios[10], int& count);
+void cadastrarFuncionarios(Funcionario* listaFuncionarios[10], int& count, int tentativas = 0);
 
 void validarCadastro(Funcionario* listaFuncionarios[10], int& count);
 

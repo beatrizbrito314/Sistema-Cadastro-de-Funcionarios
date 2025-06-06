@@ -18,6 +18,8 @@ bool validarID(Funcionario *listaFuncionarios[10], int count, int nID)
     }
     return false;
 }
+
+
 // cadastrar gerente
 Gerente *cadastrarGerente(string nome, int id, float salarioBase, float bonus)
 {
@@ -38,6 +40,7 @@ Desenvolvedor *cadastrarDesenvolvedor(string nome, int id, float salarioBase, in
     novoDev->setQtdProjetos(qtdprojetos);         // proprio de dev
     return novoDev;
 }
+
 Estagiario *cadastrarEstagiario(string nome, int id, float salarioBase, float horas)
 {
     Estagiario *novoEstagiario = new Estagiario(); // precisa de construtor padrão
@@ -47,8 +50,18 @@ Estagiario *cadastrarEstagiario(string nome, int id, float salarioBase, float ho
     novoEstagiario->setHorasTrabalhadas(horas);    // proprio de estagiario
     return novoEstagiario;
 };
-void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count)
+
+
+void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count, int tentativas=0)
 {
+    if(tentativas>=10){
+        cout<<"Cadastro cancelado: Número máximo de tentativas atingidas! Por favor, tente novamente mais tarde"<<endl;
+        return;
+    }
+    if(count>10){
+        cout<<"Não é possível realizar o cadastro. Número máximo de funcionários atingido"<<endl;
+        return;
+    }
     cout << "Realizar cadastro de funcionário: " << endl;
     int codCargo, id;
     string nome;
@@ -57,7 +70,8 @@ void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count)
     cin >> codCargo;
     if(codCargo!=1 && codCargo!=2 && codCargo!=3){
             cout << "Por favor, informe um código válido" << endl;
-            cadastrarFuncionarios(listaFuncionarios,count);
+            cadastrarFuncionarios(listaFuncionarios,count, tentativas+1);
+            return;
     }else{
     cout << "Informe o nome" << endl;
     cin >> nome;
@@ -66,10 +80,11 @@ void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count)
     cout << "Informe o identificador" << endl;
     cin >> id;
     bool idExiste = validarID(listaFuncionarios, count, id);
-
+    
     if (idExiste)
     {
-        cadastrarFuncionarios(listaFuncionarios,count);
+        cadastrarFuncionarios(listaFuncionarios,count, tentativas+1);
+        return;
     }
     else
     {
@@ -107,6 +122,8 @@ void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count)
         }
     }
 }
+
+
 void validarCadastro(Funcionario *listaFuncionarios[10], int &count)
 {
     string validar;

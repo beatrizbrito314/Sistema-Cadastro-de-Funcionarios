@@ -22,3 +22,4 @@ void Estagiario::exibirInformacoes() {  // Sobrescrever os dados p/ Estagiario
     cout << "Salário base: " << getSalario() << endl;
     cout << "Salário final: " << calcularSalario() << endl;
 }
+Estagiario::~Estagiario(){};

@@ -25,3 +25,4 @@ void Gerente::exibirInformacoes() {  // Sobrescrever os dados p/ Gerente
     cout << "Salário base: " << getSalario() << endl;
     cout << "Salário final: " << calcularSalario() << endl;
 }
+Gerente::~Gerente(){};

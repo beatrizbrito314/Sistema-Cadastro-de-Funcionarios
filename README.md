@@ -69,13 +69,13 @@ Contém atributos comuns e métodos básicos para todos os funcionários:
 No Git Bash: git clone https://github.com/beatrizbrito314/LP1-Sistema-Bancario-Simples
 
 2. Entre no diretório do projeto
-cd ~/Cadastro-de-Funcionarios 
+cd ~/Sistema-Cadastro-de-Funcionarios 
 
 3. Compile o projeto utilizando o makeFile
 make
 
 4. Execute o programa
-./cadastroDeFuncionarios
+./Executavel
 
 ---
 

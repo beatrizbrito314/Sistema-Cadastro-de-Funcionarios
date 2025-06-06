@@ -30,6 +30,6 @@ class Funcionario {
         virtual float calcularSalario()=0;
 
         //destrutor
-        ~Funcionario();
+        virtual ~Funcionario();
 };
 #endif

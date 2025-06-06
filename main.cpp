@@ -8,8 +8,9 @@
 int main() {
     Funcionario* listaFuncionarios[10];
     int count = 0;
+cout<<"Cadastre, no mínimo, 6 funcionários"<<endl;
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 6; i++) {
         cadastrarFuncionarios(listaFuncionarios, count);
     }
 
@@ -21,6 +22,9 @@ int main() {
         listaFuncionarios[i]->exibirInformacoes();
         cout << "-------------------------" << endl;
     }
-
+    //liberar memoria
+    for (int i = 0; i < count; ++i) {
+    delete listaFuncionarios[i];
+}
     return 0;
 }

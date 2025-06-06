@@ -30,5 +30,5 @@ using namespace std;
         cout << "Salário final: " << calcularSalario() << endl;
 
     }
-
+Desenvolvedor::~Desenvolvedor(){};
  
