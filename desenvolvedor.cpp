@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+
 #include "funcionario.h"
 #include "desenvolvedor.h"
+
 using namespace std;
 
-    
         //Construtor
         Desenvolvedor::Desenvolvedor(){};
         Desenvolvedor::Desenvolvedor(string nome, int id, float salarioBase, int projetos)
@@ -28,7 +29,6 @@ using namespace std;
         cout << "Salário base: " << salarioBase << endl;
         cout << "Salário final: " << calcularSalario() << endl;
 
-
     }
 
-    
+ 
