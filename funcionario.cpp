@@ -2,8 +2,8 @@
 #include <string>
 #include "funcionario.h"
 using namespace std;
-//Funcionario::Funcionario(){}; nao sei se vou usar
 //construtor
+Funcionario::Funcionario(){}; 
 Funcionario::Funcionario(string nome, int id, float salarioBase){
     this->nome=nome;
     this->id=id;
@@ -13,8 +13,7 @@ Funcionario::Funcionario(string nome, int id, float salarioBase){
 Funcionario::~Funcionario(){};
 //metodos
 string Funcionario::setNome(string nome){
-    cout <<"Informe o nome do funcionario: "<< endl;
-    cin >>this->nome;
+    this->nome=nome;
     return nome;
 };
 string Funcionario::getNome(){
@@ -22,8 +21,7 @@ string Funcionario::getNome(){
 };
 
 float Funcionario::setSalario(float salarioBase){
-    cout <<"Informe o salario do funcionario: "<< endl;
-    cin >>this->salarioBase;
+    this->salarioBase=salarioBase;
     return salarioBase;
 };
 float Funcionario::getSalario(){
@@ -32,8 +30,7 @@ float Funcionario::getSalario(){
 
 int Funcionario::setID(int id){
     //implemetar funcao para impedir 2 id iguais
-    cout <<"Informe o id do funcionario: "<< endl;
-    cin >>this->id;
+    this->id=id;
     return id;
 };
 int Funcionario::getID(){

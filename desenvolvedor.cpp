@@ -6,14 +6,18 @@ using namespace std;
 
     
         //Construtor
+        Desenvolvedor::Desenvolvedor(){};
         Desenvolvedor::Desenvolvedor(string nome, int id, float salarioBase, int projetos)
          : Funcionario(nome, id, salarioBase), quantidadeDeProjetos(projetos){}
         
          //Implementação de calcularSalarioFinal()
-        float Desenvolvedor::calcularSalarioFinal(){
+        float Desenvolvedor::calcularSalario(){
             return salarioBase +(500 * quantidadeDeProjetos);
     }
-
+       int Desenvolvedor::setQtdProjetos(int quantidadeDeProjetos){
+            this->quantidadeDeProjetos=quantidadeDeProjetos;
+            return quantidadeDeProjetos;
+        };
    
     //Sobreescrevendo exibirInformacoes()
     void Desenvolvedor::exibirInformacoes(){
@@ -22,7 +26,7 @@ using namespace std;
         cout << "Tipo: Desenvolvedor " << endl; 
         cout << "Projetos: " << quantidadeDeProjetos << endl;
         cout << "Salário base: " << salarioBase << endl;
-        cout << "Salário final: " << calcularSalarioFinal() << endl;
+        cout << "Salário final: " << calcularSalario() << endl;
 
 
     }

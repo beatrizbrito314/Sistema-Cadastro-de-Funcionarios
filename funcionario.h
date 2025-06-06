@@ -14,8 +14,8 @@ class Funcionario {
     public:
         //construtor
         Funcionario(std::string nome, int id, float salarioBase);
-
-        std::string setNome(string nome);
+        Funcionario();
+        std::string setNome(std::string nome);
         std::string getNome();
 
         float setSalario(float salario);
@@ -27,7 +27,7 @@ class Funcionario {
         //implementar informaçõespadrões (bia)
         virtual void exibirInformacoes();
         //todas as classe DEVEM filhas implementar esse método (Sarah e Luiz)
-        virtual float CalcularSalario()=0;
+        virtual float calcularSalario()=0;
 
         //destrutor
         ~Funcionario();

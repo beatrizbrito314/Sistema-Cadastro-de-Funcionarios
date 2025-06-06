@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 using namespace std;
 class Funcionario {
@@ -48,89 +48,6 @@ class Funcionario {
         cout << "Salario Base: " << this->getSalario() <<endl;
     };
 };
-bool validarID(Funcionario* listaFuncionarios[10], int count, int nID){
-    for (int i = 0; i < count; i++) {
-        if (listaFuncionarios[i]->getID() == nID) {
-            cout<<"O identificador informado já está cadastrado"<<endl;
-            return true; 
-        }
-    }
-    return false; 
-}
-
-void cadastrarFuncionarios(Funcionario *listaFuncionarios[10], int &count){
-        cout<<"Realizar cadastro de funcionário: "<<endl;
-        int codCargo, id;
-        string nome;
-        float salario;
-        cout<<"Informe o cargo: 01-Gerente, 02-Desenvolvedor, 03-Estagiário"<<endl;
-        cin>>codCargo;
-        cout<<"Informe o nome"<<endl;
-        cin>>nome;
-        cout<<"Informe o salario"<<endl;
-        cin>>salario;
-        cout<<"Informe o identificador"<<endl;
-        cin>>id;
-        bool idExiste=validarID(listaFuncionarios, count, id);
-
-        if(idExiste){
-            return;
-        }else{
-        //gerente
-        if(codCargo==01){
-            Funcionario* novoFuncionario=new Funcionario();
-            
-            novoFuncionario->setNome(nome);
-            novoFuncionario->setSalario(salario);
-            novoFuncionario->setID(id);
-            listaFuncionarios[count]= novoFuncionario;
-            count++;
-        }
-
-        //dev
-        else if(codCargo==02){
-            Funcionario* novoFuncionario=new Funcionario();
-            
-            novoFuncionario->setNome(nome);
-            novoFuncionario->setSalario(salario);
-            novoFuncionario->setID(id);
-            listaFuncionarios[count]= novoFuncionario;
-            count++;
-
-        //estagiario
-        }
-        else if(codCargo==03){
-            Funcionario* novoFuncionario=new Funcionario();
-            
-            novoFuncionario->setNome(nome);
-            novoFuncionario->setSalario(salario);
-            novoFuncionario->setID(id);
-            listaFuncionarios[count]= novoFuncionario;
-            count++;
-        }
-        else{
-            cout<<"Por favor, informe um código válido"<<endl;
-        }
-    }}
-void validarCadastro(Funcionario *listaFuncionarios[10], int &count) {
-    string validar;
-
-    while (true) {
-        if (count >= 10) {
-            cout << "Limite máximo de funcionários atingido." << endl;
-            break;
-        }
-
-        cout << "Deseja cadastrar outro funcionário? s/n" << endl;
-        cin >> validar;
-
-        if (validar == "s") {
-            cadastrarFuncionarios(listaFuncionarios, count);
-        } else {
-            break;
-        }
-    }
-}
 
 int main(){
     Funcionario *listaFuncionarios[10];
@@ -149,3 +66,4 @@ int main(){
     }
     validarCadastro(listaFuncionarios,count);
 }
+*/

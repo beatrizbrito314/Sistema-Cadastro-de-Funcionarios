@@ -12,9 +12,11 @@ class Desenvolvedor: public Funcionario {
         int quantidadeDeProjetos;
 
     public:
+    Desenvolvedor();
     Desenvolvedor(string nome, int id, float salarioBase, int projetos);
-    float calcularSalarioFinal();
-    void exibirInformacoes();
+    float calcularSalario() override; 
+    void exibirInformacoes() override;
+    int setQtdProjetos(int qtdProjetos);
 };
 
 #endif
