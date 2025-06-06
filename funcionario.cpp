@@ -21,6 +21,9 @@ string Funcionario::getNome(){
 };
 
 float Funcionario::setSalario(float salarioBase){
+    if(salarioBase<0){
+        salarioBase=salarioBase*(-1);
+    }
     this->salarioBase=salarioBase;
     return salarioBase;
 };

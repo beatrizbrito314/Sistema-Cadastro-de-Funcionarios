@@ -13,6 +13,9 @@ float Gerente::calcularSalario() {
     return salarioBase + bonusMensal;    //  Cálculo do salário final
 }
 void Gerente::setBonusMensal(float bonus){
+    if(bonus<0){
+        bonus=bonus*(-1);
+    }
     this->bonusMensal=bonus;
 }
 
