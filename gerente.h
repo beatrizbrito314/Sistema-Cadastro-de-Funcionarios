@@ -1,4 +1,4 @@
-#ifndef GERENTE_H    //  Início da guarda de inclusão
+#ifndef GERENTE_H    
 #define GERENTE_H
 
 #include <iostream>
@@ -13,15 +13,16 @@ class Gerente : public Funcionario { //  Herança da classe abstrada Funcionario
 
     public:
     //Setter
-    void setBonusMensal (float bonus) {bonusMensal = bonus;}    //  bonus atribui valor ao atributo privado bonusMensal
+    void setBonusMensal (float bonus);    //  bonus atribui valor ao atributo privado bonusMensal
 
     //Construtor
     Gerente(string nome, int id, float salarioBase, float bonusMensal);
-    
+    Gerente();
+    //destrutor
+    ~Gerente();
     //Metódos
     void exibirInformacoes() override;  //  Sobrescreve as informações 
 
-    float CalcularSalario() override;
+    float calcularSalario()override;
 };
-
-#endif  //  Fim da guarda de inclusão (GERENTE_H)
+#endif  

@@ -1,4 +1,4 @@
-#ifndef ESTAGIARIO_H    //  Início da guarda de inclusão
+#ifndef ESTAGIARIO_H    
 #define ESTAGIARIO_H
 
 #include <iostream>
@@ -14,14 +14,16 @@ class Estagiario : public Funcionario { //  Herança da classe abstrada Funciona
     public:
     //Construtor
     Estagiario(string nome, int id, float salarioBase, int horas);
-    
+    Estagiario();
+    //destrutor
+    ~Estagiario();
     //Setter
     void setHorasTrabalhadas (int horas) {horasTrabalhadas = horas;}    //  horas atribui valor ao atributo privado horasTrabalhadas
 
     //Metódos
     void exibirInformacoes() override;  //  Sobrescreve as informações 
 
-    float CalcularSalario() override;
+    float calcularSalario() override;
 };
 
-#endif  //  Fim da guarda de inclusão (ESTAGIARIO_H)
+#endif  
