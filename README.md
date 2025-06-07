@@ -63,19 +63,33 @@ Contém atributos comuns e métodos básicos para todos os funcionários:
 
 ---
 
-## 💻 Uso
+## 💻 Como usar
 
-1. Clonar o repositório
-No Git Bash: git clone https://github.com/beatrizbrito314/LP1-Sistema-Bancario-Simples
+1. **Clone o repositório**
 
-2. Entre no diretório do projeto
-cd ~/Cadastro-de-Funcionarios 
+   No Git Bash:
 
-3. Compile o projeto utilizando o makeFile
-make
+   ```bash
+   git clone https://github.com/beatrizbrito314/LP1-Sistema-Bancario-Simples
+   ```
 
-4. Execute o programa
-./cadastroDeFuncionarios
+2. **Entre no diretório do projeto**
+
+   ```bash
+   cd ~/Cadastro-de-Funcionarios
+   ```
+
+3. **Compile o projeto utilizando o Makefile**
+
+   ```bash
+   make
+   ```
+
+4. **Execute o programa**
+
+   ```bash
+   ./cadastroDeFuncionarios
+   ```
 
 ---
 

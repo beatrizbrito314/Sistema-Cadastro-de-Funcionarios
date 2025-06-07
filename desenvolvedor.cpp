@@ -15,7 +15,6 @@ using namespace std;
             return salarioBase +(500 * quantidadeDeProjetos);
     }
 
-   
     //Sobreescrevendo exibirInformacoes()
     void Desenvolvedor::exibirInformacoes(){
         cout << "ID: " << getID() <<endl;
